@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Content/Hospital.Master" AutoEventWireup="false" CodeFile="Appointment.aspx.vb" Inherits="AdminPanel_Appointment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Content/Hospital.Master" AutoEventWireup="true" CodeFile="Appointment.aspx.cs" Inherits="AdminPanel_Appointment" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" Runat="Server">
 </asp:Content>
@@ -58,11 +58,11 @@
             <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
+          <%--<div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-          </div>
+          </div>--%>
           <div class="text-center"><button type="submit">Make an Appointment</button></div>
         </form>
 

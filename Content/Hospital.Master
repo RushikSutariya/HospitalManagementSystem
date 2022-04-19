@@ -46,17 +46,33 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       <div>
         <class="container">
-            <div class="row" style="font-family:Bahnschrift">
+            <div class="row">
+            <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top"> 
+            <div class="container d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+               <%-- <i class="icofont-clock-time">--%>
+                  <asp:Image runat="server" ID="imgClockMaster" ImageUrl="~/Content/img/icon/download.jpg" Height="26px" />&nbsp
+                  Morning: 10 AM to 3 PM Evening: 4:30 PM to 9 PM (Saturday Evening & Sunday Closed)
+              </div>
+              <div class="d-flex align-items-center">
+                <%--<i class="icofont-phone"></i>--%> 
+                  <asp:Image runat="server" ID="Image1" ImageUrl="~/Content/img/icon/OIP.jpg" Height="26px" />&nbsp
+                  Call us now  0281 2464621
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div>
+            <div class="row"  style="font-family:Bahnschrift; margin-top:50px">
                 <div class="col-md-4">
                     <asp:Image runat="server" ID="imgLogo" ImageUrl="~/Content/img/icon/logo.png"/>
                 </div>
                 <div class="col-md-8" style="margin-top:50px">
-                            <asp:HyperLink runat="server" ID="hlCountry" Text="Home" ToolTip="Go To The Home Page" NavigateUrl="~/AdminPanel/Country/List" style="color:black" CssClass="button button1 button:hover"  ></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp 
-                            <asp:HyperLink runat="server" ID="hlState" Text="About" ToolTip="Go To The State List Page" NavigateUrl="~/AdminPanel/About.aspx" style="color:black" CssClass="button button1 button:hover" ></asp:HyperLink> &nbsp;&nbsp | &nbsp;&nbsp 
-                            <asp:HyperLink runat="server" ID="hlCity" Text="Services" ToolTip="Go To The City List Page" NavigateUrl="~/AdminPanel/Service.aspx" style="color:black" CssClass="button button1 button:hover"></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp 
-                            <asp:HyperLink runat="server" ID="hlContactCategory" Text="Doctors" ToolTip="Go To The ContactCategory List Page" NavigateUrl="~/AdminPanel/Doctors.aspx" style="color:black" CssClass="button button1 button:hover"></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp 
+                            <asp:HyperLink runat="server" ID="hlHome" Text="Home" ToolTip="Go To The Home Page" NavigateUrl="~/AdminPanel/Home.aspx" style="color:black" CssClass="button button1 button:hover"  ></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp 
+                            <asp:HyperLink runat="server" ID="hlAbout" Text="About" ToolTip="Go To The State List Page" NavigateUrl="~/AdminPanel/About.aspx" style="color:black" CssClass="button button1 button:hover" ></asp:HyperLink> &nbsp;&nbsp | &nbsp;&nbsp 
+                            <asp:HyperLink runat="server" ID="hlServices" Text="Services" ToolTip="Go To The City List Page" NavigateUrl="~/AdminPanel/Service.aspx" style="color:black" CssClass="button button1 button:hover"></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp 
+                            <asp:HyperLink runat="server" ID="hlDoctors" Text="Doctors" ToolTip="Go To The ContactCategory List Page" NavigateUrl="~/AdminPanel/Doctors.aspx" style="color:black" CssClass="button button1 button:hover"></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp 
                             <asp:HyperLink runat="server" ID="hlGallery" Text="Gallery" ToolTip="Go To The Contact List Page" NavigateUrl="~/AdminPanel/Gallery.aspx" style="color:black" CssClass="button button1 button:hover"></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp
                             <asp:HyperLink runat="server" ID="hlContact" Text="Contact" ToolTip="Go To The Contact List Page" NavigateUrl="~/AdminPanel/Contact.aspx" style="color:black" CssClass="button button1 button:hover"></asp:HyperLink>&nbsp;&nbsp | &nbsp;&nbsp
                             <asp:HyperLink runat="server" ID="hlAppointment" Text="Make An Appointment"  ToolTip="Go To The Contact List Page" NavigateUrl="~/AdminPanel/Appointment.aspx" style="color:black" CssClass="btn btn-default"></asp:HyperLink>

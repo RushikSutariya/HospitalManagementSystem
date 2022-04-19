@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Content/Hospital.Master" AutoEventWireup="false" CodeFile="Contact.aspx.vb" Inherits="AdminPanel_Contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Content/Hospital.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="AdminPanel_Contact" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="cphMainHead" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMainHead" Runat="Server">
     <section id="contact" class="contact">
         <div class="container">
 

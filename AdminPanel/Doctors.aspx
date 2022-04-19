@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Content/Hospital.Master" AutoEventWireup="false" CodeFile="Doctors.aspx.vb" Inherits="AdminPanel_Doctors" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Content/Hospital.Master" AutoEventWireup="true" CodeFile="Doctors.aspx.cs" Inherits="AdminPanel_Doctors" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMainHead" Runat="Server">
-    <section id="doctors" class="doctors section-bg">
+     <section id="doctors" class="doctors section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
